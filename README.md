@@ -20,8 +20,8 @@ TrackMe is a company that provides three services:-
   Elisabetta Di Nitto
 
 ### Deadlines
-* Group Registration: 14/10/2018
-* Discussion and Doubt clearance session: 17/10/2018
+* ~~Group Registration: 14/10/2018~~
+* ~~Discussion and Doubt clearance session: 17/10/2018~~
 * RASD submission deadline: 11/11/2018
 * Design Document submission deadline: 10/12/2018
 * Final Presentation:
