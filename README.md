@@ -28,17 +28,20 @@ TrackMe is a company that provides three services:-
 
 ### Schedule 
 
-| Task | Deadline |
-| ---- | -------- |
-| Define Purpose, Goals and Scope | 21/10/2018 | 
-| Work on product functions | 21/10/2018 |
-| Discussions on previous projects and assignment compeletion | 22/10/2018 |
-| Define User characteristics, Software interface, Hardware Interface| |
-| Formulate all functional requirements| |
-| Use Case Diagram | |
-| Activity Diagram | |
-| State Diagram  | |
-| Alloy Modelling (Final version) | 07/10/2018 (Tentative Date)  |
+| Task                                 | Deadlines     | Link  |
+| ------------------------------------ |:-------------:| -----:|
+| Purpose                       | 21/10/2018      | [Link1](https://docs.google.com/document/d/1Or7aglJbeBsoHR5tqhnVymgFG0gOmihCOXqvMuci21g/edit?usp=sharing) |
+| Scope                         |  21/10/2018     | [Link2](https://docs.google.com/document/d/1D-FYubddELyB6ro9z1Oxj5xlG_8zpWq2HJFKQx24IG4/edit?usp=sharing) |
+| Goals                         |   21/10/2018    |  [Link3](https://docs.google.com/document/d/13ibDW_v_D57mA2n-OOU7XBZVjlH4gbkjZh_6A9Sht1g/edit?usp=sharing) |
+| Define Product Functions             | 21/10/2018   | [Link4](https://docs.google.com/document/d/1RZdYuTasAuT0GDCwBPlvUDSUkG2Xa49ng8N7ZI9vc3M/edit?usp=sharing) |
+| Discussions on Previous project      | 22/10/2018    |       |
+| User Characteristics                 | 21/210/2018   | [Link6](https://docs.google.com/document/d/1OdOKbLerwhISCSZ5Qt22pAm_vOwS3x0uSVbc_Ed1JAw/edit?usp=sharing)    |
+| Formulate Functional Requirements    |               |       |
+| Non-Functional Requirements          |               |       |
+| Use Case Diagram                     |               |       |
+| Acrivity Diagram                     |               |       |
+| Allow Model(Final Version)           |               |       |
+
 
 
 ##Parallel works
@@ -48,3 +51,4 @@ TrackMe is a company that provides three services:-
 
 
 *This README file will be updated as per improvements made in the project schedule by team members to meet the deadline*
+*Note: The correspondong files will be committed to the github after a final draft of each file is made. We are also trying to make a merge between our google drive folder to github, if possible.*
