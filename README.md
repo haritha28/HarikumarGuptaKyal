@@ -27,10 +27,24 @@ TrackMe is a company that provides three services:-
 * Final Presentation:
 
 ### Schedule 
-1. Project Discussions and brainstorming sessions between team members.
-2. Identify the stakeholder and requirements of the project.
-3. Identify the goals and specifications of TrackMe. *To see the revisions with Goals please check [here](https://docs.google.com/document/d/1Wk_vG9mcQwdurf38OUa9_dUlHNLRDfcC8sVfw87WpPU/edit?usp=sharing)*
-4. In Depth detailing of the functionalities we decide to provide. 
-5. Creation of Mockup for the application
+
+| Task | Deadline |
+| ---- | -------- |
+| Define Purpose, Goals and Scope | 21/10/2018 | 
+| Work on product functions | 21/10/2018 |
+| Discussions on previous projects and assignment compeletion | 22/10/2018 |
+| Define User characteristics, Software interface, Hardware Interface| |
+| Formulate all functional requirements| |
+| Use Case Diagram | |
+| Activity Diagram | |
+| State Diagram  | |
+| Alloy Modelling (Final version) | 07/10/2018 (Tentative Date)  |
+
+
+##Parallel works
+1. Updating the latext file 
+2. Assumptions and Acronyms and all.
+
+
 
 *This README file will be updated as per improvements made in the project schedule by team members to meet the deadline*
