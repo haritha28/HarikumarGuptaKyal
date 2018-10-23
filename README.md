@@ -36,7 +36,7 @@ TrackMe is a company that provides three services:-
 | Define Product Functions             | 21/10/2018   | [Link4](https://docs.google.com/document/d/1RZdYuTasAuT0GDCwBPlvUDSUkG2Xa49ng8N7ZI9vc3M/edit?usp=sharing) |
 | Problems from Previous project      | 22/10/2018    | [Link5](https://docs.google.com/document/d/143Q_0F3AAMLNcqAfy1sm0pyHeD6Y2WTMwDMYzgMxeUY/edit?usp=sharing)   |
 | User Characteristics                 | 21/10/2018   | [Link6](https://docs.google.com/document/d/1OdOKbLerwhISCSZ5Qt22pAm_vOwS3x0uSVbc_Ed1JAw/edit?usp=sharing) |
-| Hardware Interface                   | 28/10/2018    |       |
+| Hardware Interface                   | 28/10/2018    |  [Link7](https://docs.google.com/document/d/1fGEiolvarl1YD6xohkTXRdVW3Xtp78QAZ9SeTJEDuHQ/edit?usp=sharing)     |
 | Software Interface                   | 28/10/2018    | [Link8](https://docs.google.com/document/d/1m6OQ-cGd1xN0bK9nUfAKDk8bnIaw8kqJw1tDWOZjcjE/edit?usp=sharing) |
 | Communication Interface              | 28/10/2018    |       |
 | User Interface                       | 28/10/2018    |       |
