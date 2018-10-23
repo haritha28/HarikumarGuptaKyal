@@ -9,7 +9,7 @@ TrackMe is a company that provides three services:-
 
 * AutomatedSOS: It is a service built on top of Data4Help which monitors the health status of the subscribed customers and sends ambulance to customers when health parameters are below certain thresholds.
 
-* Track4Run: It is a service to track athletes participating in a run.
+* Track4Run: It is a service that allows organizer to organize a race, athletes to participate in the race and spectators to view the race live in a Map.
 
 ### Team Members
 1. Mohini Gupta
