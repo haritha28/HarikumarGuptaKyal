@@ -34,19 +34,22 @@ TrackMe is a company that provides three services:-
 | Scope                         |  21/10/2018     | [Link2](https://docs.google.com/document/d/1D-FYubddELyB6ro9z1Oxj5xlG_8zpWq2HJFKQx24IG4/edit?usp=sharing) |
 | Goals                         |   21/10/2018    |  [Link3](https://docs.google.com/document/d/13ibDW_v_D57mA2n-OOU7XBZVjlH4gbkjZh_6A9Sht1g/edit?usp=sharing) |
 | Define Product Functions             | 21/10/2018   | [Link4](https://docs.google.com/document/d/1RZdYuTasAuT0GDCwBPlvUDSUkG2Xa49ng8N7ZI9vc3M/edit?usp=sharing) |
-| Discussions on Previous project      | 22/10/2018    |       |
-| User Characteristics                 | 21/210/2018   | [Link6](https://docs.google.com/document/d/1OdOKbLerwhISCSZ5Qt22pAm_vOwS3x0uSVbc_Ed1JAw/edit?usp=sharing)    |
-| Formulate Functional Requirements    |               |       |
+| Problems from Previous project      | 22/10/2018    | [Link5](https://docs.google.com/document/d/143Q_0F3AAMLNcqAfy1sm0pyHeD6Y2WTMwDMYzgMxeUY/edit?usp=sharing)   |
+| User Characteristics                 | 21/210/2018   | [Link6](https://docs.google.com/document/d/1OdOKbLerwhISCSZ5Qt22pAm_vOwS3x0uSVbc_Ed1JAw/edit?usp=sharing) |
+| Hardware Interface                   | 28/10/2018    |       |
+| Software Interface                   | 28/10/2018    | [Link8](https://docs.google.com/document/d/1m6OQ-cGd1xN0bK9nUfAKDk8bnIaw8kqJw1tDWOZjcjE/edit?usp=sharing) |
+| Communication Interface              | 28/10/2018    |       |
+| User Interface                       | 28/10/2018    |       |
+| Functional Requirements              | 28/10/2018    | [Link11](https://docs.google.com/document/d/1aDLVBe5S9p1dQ0r9be2EviskRdyp8PDLtewoJKthFk8/edit?usp=sharing) |
 | Non-Functional Requirements          |               |       |
 | Use Case Diagram                     |               |       |
-| Acrivity Diagram                     |               |       |
-| Allow Model(Final Version)           |               |       |
-
+| Activity Diagram                     |               |       |
+| Alloy Model(Final Version)           |               |       |
 
 
 ##Parallel works
-1. Updating the latext file 
-2. Assumptions and Acronyms and all.
+1. Updating the latex file 
+2. Assumptions, Acronyms and Definition.
 
 
 
