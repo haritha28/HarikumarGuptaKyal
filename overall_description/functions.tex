@@ -1,10 +1,8 @@
 \subsection{Vital Status}
-
-% to be added
+\qquad TrackMe uses it service named Data4Help to share the health status of individuals to be monitored, to the third party on their requests. The health status of the individual will be extracted from a wearable device through the API of the wearable device about which the individual will mention while registering by selecting their device among the list of compatible wearable devices of TrackMe. The health parameters which are extracted includes heart beat rate, no. of steps, body temperature, detection of seizures, tremors etc. This is an important and crucial function of the software because it deals with individuals health and safety. Track4Me launches a new service called “AutomatedSOS” where TrackMe itself monitors the individual's health status and do the needful.
 
 \subsection{Location Tracking}
 \qquad Data4Help helps TrackMe to use monitor the location of the individual which can be later shared with the third party after validation. This service of location tracking can be helpful in case of emergencies which we come across in automated SOS. We basically use the Global Positioning System or the GPS to track the location of the individual. There are chances that we can lose the GPS connection in certain cases like may be inside our home due to poor connection to satellite. In such cases we can fetch the location from the nearest wi-fi to which our device get connected. In case of an emergency TrackMe system shall locate a minimum of 3 available ambulances that are closest to the emergency location by displaying a map and marking location of the emergency and ambulance nearby, which is would be taking less than a minute to fetch. We then share the data to the nearest ambulance within 5 seconds.We also use location tracking for athletes for a real time visualization of the positions of the athletes for a particular race which is explained further below.
-
 
 \subsection{Third Party Validation}
 % To be added
@@ -13,7 +11,7 @@
 %to be added
 
 \subsection{Expeditious Data Convey}
-%to be added
+\qquad Track4Me monitors the health status themselves when the individual uses the service “AutomatedSOS” rather than sending the data to the third party to be monitored. When the health parameters go below the threshold, Track4Me tracks the location of the nearby ambulance to the patient. The nearby ambulance is tracked with the help of external emergency services API. The nearby ambulance drivers then receive a request through push notification and the one who accepts the request first goes to the location of the patient. A separate mobile application of Track4Me is to be exclusively developed for the ambulance drivers to send the location and other details of the patient in less than 5 seconds to ensure spontaneity in reaction to emergencies. All the hospitals in Milan are informed to ensure all the ambulance drivers installs TrackMe application.
 
 \subsection{Real Time Visualization of Race}
 \qquad This service is basically used by the spectators who wish to watch a race or marathon live, which comes as a part of the Track4Run. Once an athlete registers with the Track4Run service. His/Her location is tracked live with the help of the device using GPS. Track4Run fetches the track details way before and set it as the Track for a particular race or marathon and shows an enlarged view of the track while displaying the live positions of the participants.
