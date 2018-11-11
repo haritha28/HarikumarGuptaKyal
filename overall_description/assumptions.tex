@@ -1,0 +1,34 @@
+\subsection{Assumptions}
+\begin{itemize}
+\item \textbf{D1} Users should be registered in the TrackMe application to avail its services.
+\item \textbf{D2}  
+\item \textbf{D3} Vitals taken from the wearable devices are reliable. 
+\item \textbf{D4} Internet connection will be active in users phone. 
+\item \textbf{D5} GPS provides accurate positions and incase the signal is lost, last active location would be considered.
+\item \textbf{D6} We assume that a certain number of hospitals are registered to with TrackMe which provide Ambulance services.
+\item \textbf{D7}There exists an application which is used by both the Ambulance drivers and TrackMe.
+\item \textbf{D9} We assume there are no issues between the time we sent a message and the drivers receive it.
+\item \textbf{D10} Organizers can keep a maximum limit of the participants who can join the event.
+\item \textbf{D11} An event is organized for a reason
+\item \textbf{D12} All athletes have their own wearable device.
+\item \textbf{D13} A user can be an individual or a third party. An individual can either belong to the people availing Data4Help or they can be spectator. An organizer belongs to the third party group. An athlete belongs to the individual group.
+\item \textbf{D14} All details entered by the users are genuine.
+\item \textbf{D15} We take permission from user to access the location and further details.
+\item \textbf{D16} There is an external service that will be in charge of the payment information and to ensure secure payment.
+\item \textbf{D17} Payment Details are genuine and transactions are processed positively.
+\end{itemize}
+
+\subsection{Dependencies}
+\begin{enumerate}
+\item Wearable device API
+\item Google Maps API
+\item Emergency services API
+\item Payment external gateway
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item Only a few wearable devices are compatible with application.
+\item The services provided by the application are limited to the citizens of Milan.
+\item This application is connected only with the major hospitals in Milan for Ambulance services
+\end{enumerate}
