@@ -150,6 +150,22 @@ This service is for both the users, individual and third party.\newline If the u
 \end{figure}
 
 \textbf{Mobile Application for Ambulance Drivers}
+This is an application made explicitly for Ambulance where they receive request in form of push notification and they accept it and the first driver to accept is navigates to the individual's location.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}	
+		\includegraphics[width=4cm,height=7cm]		{./Mockups/1-Ambulance.png}
+      	\caption{Accept Request}
+        \label{TrackMe_ambulance}
+	 \end{subfigure}
+     \begin{subfigure}[b]{0.4\textwidth}	
+		\includegraphics[width=4cm,height=7cm]		{./Mockups/2-Ambulance.png}
+      	\caption{Navigate}
+        \label{TrackMe_navigate}
+	 \end{subfigure}
+\end{figure}
+.\newline\newline
 
 \subsection{Software Interfaces}
 \begin{enumerate}
@@ -159,5 +175,13 @@ This service is for both the users, individual and third party.\newline If the u
 \newline\qquad TrackMe develops an application for all the ambulance drivers associated with major Hospitals in the city of Milan. The application fetches the details and location of all the ambulance driver. When the health status of an subscribed individual is below a threshold value, the software sends a push notification to the nearby ambulance drivers phone with the details and location of the individual. Once an ambulance driver accept the request, the software removes the alert message from the application. The driver can navigate to the location of the individual in need of emergency using the map provided in the application.
 \item \textbf{City Maps}
 \newline\qquad We will be using Google Maps API to facilitate the location monitoring for third party services and insertion of race location in Track4Run and race visualization.
-\item \textbf{Communication Interfaces}
 \end{enumerate}
+.\newline\newline\newline\newline\newline\newline\newline
+\subsection{Communication Interface}
+The TrackMe application provides the Data4Help API which is used by the third party after validating for accessing individual's details and Track4Run for accessing the location of athletes. It also provides the details to the ambulance application API to use Automated SOS. All the external API's like Emergency Service API, Wearable Device API and Google Map API are connected as they provide information.
+\begin{figure}[H]
+	\centering	
+		\includegraphics[width=\linewidth]		{./Diagrams/CommunicationInterface.png}
+      	\caption{Communication Interface}
+        \label{TrackMe_comint}
+\end{figure}

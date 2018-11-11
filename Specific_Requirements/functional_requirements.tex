@@ -1,1 +1,94 @@
-\subsection{}
+In order to fulfill the goals, with all the domain properties and assumption, listed in the above section of the document, the following requirements can be derived. Each goal has its own set of requirement and they are mentioned below.\newline
+
+\begin{itemize}
+
+\item\textbf{[G1]} Providing a list of the wearable devices that an individual can choose from.
+
+\begin{itemize}
+\item\textbf{[R1]} The location and the health status of an individual should be fetched by the wearable device API.
+\item\textbf{[R2]} Individual should be able to update their wearable device.
+\item\textbf{[A3]} Vitals taken from the wearable devices are reliable.
+\item\textbf{[A5]} GPS provides accurate positions and incase the signal is lost, last active location would be considered.
+\item\textbf{[C1]} Only a few wearable devices are compatible with application.\newline
+\end{itemize}
+
+\item\textbf{[G2]} Expedite the request made by the 3rd party to an individual to access their details.
+
+\begin{itemize}
+\item\textbf{[R3]} Individual must be able to view the name and the purpose/relationship of the 3rd party who requested the data.
+\item\textbf{[R4]} The details of all the 3rd party accessing the individual’s data must be visible.\newline
+\end{itemize}
+
+\item\textbf{[G3]} Provides an interface for an individual to analyze the request made by the 3rd party.
+
+\begin{itemize}
+\item\textbf{[R5]} The system must provide a choice to an Individual to accept or reject the request of the 3rd party.\newline
+\end{itemize}
+\item\textbf{[G4]} Validating the request made by the 3rd party to provide the details of a group of individuals.
+\begin{itemize}
+\item\textbf{[R6]} The system checks whether the request made by the 3rd party is of more than 1000 Individuals.
+\item\textbf{[R7]} The details of the group of individual must be displayed in a list.
+\item\textbf{[R8]} The details of an individual should be displayed in a pop up dialog.\newline
+\end{itemize}
+
+\item\textbf{[G5]} Quick access of the data to the 3rd party once the request is approved.
+
+\begin{itemize}
+\item\textbf{[R9]} Allow a 3rd party to an instant access of the previously saved data after it is approved.
+\item\textbf{[R10]} 3rd party must view all the updated data of the individual. \newline
+\end{itemize}
+
+\item\textbf{[G6]} Immediate update of the data once an individual updates their own details.
+
+\begin{itemize}
+\item\textbf{[R11]} An individual should be able to update all their details.
+\item\textbf{[R12]} Allow a 3rd party to access the new data as soon as the individual updates it.\newline
+\end{itemize}
+
+\item\textbf{[G7]}  Provides an upgradation to the new services, Automated SOS or Track4Run.
+
+\begin{itemize}
+\item\textbf{[R13]} They system shall redirect to a payment gateway once a new service is selected.
+\item\textbf{[D17]} Payment Details are genuine and transactions are processed positively.\newline
+\end{itemize}
+
+\item\textbf{[G8]} Monitoring the health status of the subscribed individual to the Automated SOS service.
+
+\begin{itemize}
+\item\textbf{[R14]} The system must compare the vitals of the individual with the Threshold value of health.
+\item\textbf{[R15]} If the system detect that the health status of the individual is below the threshold value, send an alert to a nearby Ambulance with the location and details of the subscribed user.
+\item\textbf{[R16]} Push notification must be send to the ambulance driver application 
+\item\textbf{[R17]}The services provided by the application are limited to the citizens of Milan.
+\item \textbf{[A6]} We assume that a certain number of hospitals are registered to with TrackMe which provide Ambulance services.
+\item \textbf{[A7]} We assume there are no network issues between the time we sent a message and the drivers receive it.
+\item\textbf{[D7]}This application is connected only with the major hospitals in Milan for Ambulance services\newline
+\end{itemize}
+
+\item\textbf{[G9]]}  Develops an interface to organise a race for the subscribed 3rd party to the Track4Run service.
+
+\begin{itemize}
+\item\textbf{[R18]} An organiser get to add an event only after he/she/they register for Track4Run service in the application.
+\item\textbf{[R19]} Registration involves, providing his/her email, phone number for verification and a unique username.
+\item\textbf{[R20]} An event can be added with the following details like event name, time and location of the event.
+\item\textbf{[D]} The payment details given are genuine and transactions are processed positively.
+\item\textbf{[D]} Organisers can keep a maximum limit of the participants who can join the event.\newline
+\end{itemize}
+
+\item\textbf{[G10]} Give access to the details of the race once an individual participate in it.
+
+\begin{itemize}
+\item\textbf{[R21]} Participant has to register for the event.
+\item\textbf{[R22]} While registering, his/her details like name, age and wearable device to be used are requested.
+\item\textbf{[D12]} All athletes have their own wearable device.\newline
+\end{itemize}
+
+\item\textbf{[G11]} Live visualisation of the race .
+
+\begin{itemize}
+\item\textbf{[R23]} A spectator upon registration can view the live event.
+\item\textbf{[R24]} He/She also gets to choose subscribe for upcoming events.
+\item\textbf{[D]} Location of the participants are tracked using GPS.
+\item\textbf{[D]} Every Athlete is assumed to have a wearable device.
+\end{itemize}
+
+\end{itemize}

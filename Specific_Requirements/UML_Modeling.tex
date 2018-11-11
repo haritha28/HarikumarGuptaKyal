@@ -1,7 +1,7 @@
 \subsection{Use Case Diagrams}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./Diagrams/TrackMe_usecase.png}
+		\includegraphics[width=\textwidth]{./Diagrams/UseCase_TrackMe.png}
       	\caption{Use case for TrackMe application}
         \label{TrackMe_usecase}
 	\end{center}
@@ -10,7 +10,7 @@
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./Diagrams/data4help_2.png}
+		\includegraphics[width=\textwidth]{./Diagrams/UseCase_Data4Help.png}
         \caption{Use case for Data4help}
         \label{Data4help}
 	\end{center}
@@ -18,7 +18,7 @@
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./Diagrams/automatedSoS_usecase.png}
+		\includegraphics[width=\textwidth]{./Diagrams/UseCase_AutomatedSOS.png}
         \caption{Use case for Automated SOS}
         \label{track4run}
 	\end{center}
@@ -26,7 +26,7 @@
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./Diagrams/track4run.png}
+		\includegraphics[width=\textwidth]{./Diagrams/UseCase_Track4Run.png}
         \caption{Use case for track4run}
         \label{track4run}
 	\end{center}
@@ -78,22 +78,21 @@ Name & Add wearable Device\\
 Actors & Individual\\
 \hline
 Entry condition & \begin{enumerate}
-  \item The user has successfully logged into the system.
-  \item The user has a wearable device supported by trackme
+  \item The individual has successfully logged into the system.
+  \item The individual has a wearable device supported by trackme
 \end{enumerate}  \\
 \hline
 Event Flow & \begin{enumerate}
   \item Selects the add new wearable device button.
-  \item Select the device name from the given options.
-  \item Connect it via bluetooth.
+  \item Select the compatible device name from the given options.
   \item Connection successful.
 \end{enumerate}
 \\
 \hline
-Exit Conditions & The user successfully connects to the device and navigates back to dashboard. \\
+Exit Conditions & The individual successfully connects to the device and navigates back to dashboard. \\
 \hline
 Exception & 
-The device to be added is not found among the supported devices. An error message is shown in case of connection problems.\\
+All devices are not compatible with TrackMe application. The user selects there wearable device among the list of compatible device from Dropdown. An error message is shown in case of connection problems.\\
 \hline
 \end{tabular}
 \caption{Use case for adding a new wearable device.}
@@ -113,13 +112,13 @@ Actors & Individual\\
 Entry condition & No entry conditions\\
 \hline
 Event Flow & \begin{enumerate}
-\item The user can see those requests made by a third party for his/her health vitals or location.
+\item The individual can see those requests made by a third party for specific individual health vitals or location.
 \item He/She gets to accept or reject the requests.
-\item The status of the request on the users dashboard will be updated with the corresponding response
+\item The status of the request on the individual's dashboard will be updated with the corresponding response
 \end{enumerate}
 \\
 \hline
-Exit Conditions & The user successfully redirects to the dashboard.\\
+Exit Conditions & The individual successfully redirects to the dashboard.\\
 \hline
 \end{tabular}
 \caption{Use case for Accept or reject requests.}
@@ -132,13 +131,13 @@ Exit Conditions & The user successfully redirects to the dashboard.\\
 \hline
 Name & Update Info\\
 \hline
-Actors & Individual\\
+Actors & User\\
 \hline
 Entry condition & No entry conditions\\
 \hline
 Event Flow & \begin{enumerate}
-\item Upon clicking on the update Info button, he gets to change the information given earlier.
-\item Once he makes the corresponding changes, he can save it or cancel it.
+\item Upon clicking on the update Info button, user gets to change the information given earlier.
+\item Once he makes the corresponding changes, user can save it or cancel it.
 \item Upon saving changes will be updated.
 \end{enumerate}
 \\
@@ -162,16 +161,16 @@ Name & Make Requests\\
 Actors & Third Party\\
 \hline
 Entry condition & \begin{enumerate}
-\item The user is successfully logged into the system as a third party.
-\item The user needs needs health and location data of individuals or a group of individuals.
+\item The third party is successfully logged into the system as a third party.
+\item The third party needs needs health and location data of individuals or a group of individuals.
 \end{enumerate}\\
 \hline
 Event Flow & \begin{enumerate}
-\item The user clicks the Make Requests button.
-\item He/She/They are requested to select the type of request. 
+\item The third party clicks the Make Requests button.
+\item He/She/They are requested to select the type of request- individual or group of individuals.
 \item Enter the valid reason for the request
 \item Click the submit button.
-\item The request will is put for approval
+\item The request is then validated by Trackme or individual according to the category.
 \end{enumerate}
 \\
 \hline
@@ -196,13 +195,13 @@ Entry condition & \begin{enumerate}
 \end{enumerate}\\
 \hline
 Event Flow & \begin{enumerate}
-\item The user clicks the Check status button.
+\item The Third Party clicks the Check status button.
 \item The list of requests made by him/her is available with the status(approved or still waiting to be approved) of the requests
 \end{enumerate}\\
 \hline
-Exit Conditions & The user successfully navigates back.\\
+Exit Conditions & The Third Party successfully navigates back.\\
 \hline
-Exceptions & Incase the user has not made any requests a message stating “ No requests found” will be shown.\\
+Exceptions & Incase the Third Party has not made any requests a message stating “ No requests found” will be shown.\\
 \hline
 \end{tabular}
 \caption{Use case for view requests.}
@@ -220,8 +219,7 @@ Actors & Third Party or Individual\\
 Entry condition & The user needs to access a new service\\
 \hline
 Event Flow & \begin{enumerate}
-\item The user clicks the upgrade button.
-\item Choose the service he needs.
+\item The user clicks the service they want to upgrade.
 \item Choose the duration for the service.
 \item Directs to the payment page
 \item Makes the payment and completes the transaction.
@@ -251,10 +249,10 @@ Assumptions & There are some requests made by the third party service.\\
 Entry condition & No entry conditions\\
 \hline
 Event Flow & \begin{enumerate}
-\item Checks for the latests requests and categorise them. 
+\item Checks for the latests requests and categorize them. 
 \item Incase of requests for individuals the request is forwarded to the individual.
-\item Incase of request for group of data, validity of reasons provided are checked. 
-\item Status of requests are updated
+\item Incase of request for group of data, validity of reasons provided are checked. If the group of people requested for is greater than 1000, th request is accepted. 
+\item Status of requests are updated.
 \end{enumerate}
 \\
 \hline
@@ -420,4 +418,65 @@ Exceptions & Incase the user is not subscribed for any event, he/she won’t be 
 %                                          SEQUENCE DIAGRAMS                                            %
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%
 \subsection{Sequence Diagram}
-
+1. Accept/Reject Third party requests:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/1__Individual.png}
+      	\caption{Accept/Reject Third party requests.}
+        \label{TrackMe_seq1}
+	\end{center}
+\end{figure}
+.\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+2. Third Party makes new request:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/2__ThirdParty.png}
+      	\caption{Third Party makes new request.}
+        \label{TrackMe_seq2}
+	\end{center}
+\end{figure}
+.\newline\newline
+3. TrackMe validates request:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/3__TrackMe.png}
+      	\caption{TrackMe validates request.}
+        \label{TrackMe_seq3}
+	\end{center}
+\end{figure}
+.\newline\newline\newline\newline\newline\newline\newline\newline
+4. Check vitals and send push notification:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/4_Automated_SOS.png}
+      	\caption{Check vitals and send push notification.}
+        \label{TrackMe_seq4}
+	\end{center}
+\end{figure}
+.\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+5. Ambulance Drivers accepts the request of push notifications and navigate to their location:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/5_AmbulanceDriver.png}
+      	\caption{Accept request of push notifications and Navigate to their location.}
+        \label{TrackMe_seq5}
+	\end{center}
+\end{figure}
+.\newline\newline\newline\newline\newline\newline\newline\newline\newline
+6.Organizer adds race and defines path:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/6_Organizer.png}
+      	\caption{Organizer adds race and defines path.}
+        \label{TrackMe_seq6}
+	\end{center}
+\end{figure}
+.\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline\newline
+7. Athletes participate and Spectators view the race:
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{./Sequence/7_AthleteSpectator.png}
+      	\caption{Athletes participate and Spectators view the race.}
+        \label{TrackMe_seq7}
+	\end{center}
+\end{figure}
