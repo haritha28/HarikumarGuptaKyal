@@ -1,0 +1,116 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+%subpackage
+\usepackage{subcaption}
+\usepackage{float}
+% hyperref
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref}  % PDF hyperlinks, with coloured links
+\hypersetup{linkcolor=black, citecolor=black, filecolor=black, urlcolor=black} % black links, for printed output
+
+% Support for the inclusion of figures
+\usepackage{graphicx}
+
+% "Contents" and "bibliography" are included in the summary.
+\usepackage{tocbibind}
+
+% Packages and configuration for Alloy code listing
+%\usepackage{listings}
+%\usepackage{alloy}
+%\usepackage{color}
+%\definecolor{alloy-keyword}{rgb}{0.23, 0.23, 0.7}
+%\definecolor{alloy-comment}{rgb}{0.18, 0.64, 0.18}
+%\definecolor{alloy-string}{rgb}{0.71, 0.18, 0.71}
+
+\def\chapterautorefname{Chapter}
+
+\begin{document}
+\title{Software Engineering 2: TrackMe \\ \vspace{1em} Design Document}
+\author{Haritha Harikumar, Mohini Gupta, Saloni Kyal\\
+Politecnico di Milano}
+\date{December 10, 2018}
+\maketitle
+\tableofcontents
+
+%%%%%% INTRODUCTION %%%%%%%%
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Purpose}
+\input{DD_Introduction/purpose.tex}
+
+\section{Scope}
+\input{DD_Introduction/scope.tex}
+
+\section{Definitions, Acronyms, and Abbreviations}
+\input{DD_Introduction/definitions.tex}
+
+\section{References}
+\input{DD_Introduction/reference.tex}
+
+\section{Document Structure}
+\input{DD_Introduction/overview.tex}
+
+%%%%%% Architectural Design %%%%%%%%
+\chapter{Architectural Design}
+\label{ch:architectural_design}
+
+\section{Overview}
+\input{DD_Arch_Design/overview.tex}
+
+\section{Component View}
+\input{DD_Arch_Design/component.tex}
+
+\section{Deployment View}
+\input{DD_Arch_Design/deployment.tex}
+
+\section{Runtime View}
+\input{DD_Arch_Design/runtime.tex}
+
+\section{Component Interfaces}
+\input{DD_Arch_Design/component_interfaces.tex}
+
+\section{Selected architectural styles and patterns}
+\input{DD_Arch_Design/styles_patterns.tex}
+
+
+%%%%%% USER INTERFACE DESIGN %%%%%%%%
+\chapter{User Interface Design}
+\label{ch:user_interface_design}
+\input{DD_UserInterface_Design/UXDiagram.tex}
+
+
+
+%%%%%% REQUIREMENTS AND TRACE ABILITY %%%%%%%%
+\chapter{Requirements Traceability}
+\label{ch:requirement_traceability}
+
+\input{DD_Requirement_Traceablitiy/requirement.tex}
+
+%%%%%% Implementation Integration and TestPlan %%%%%%%%
+\chapter{Implementation, Integration and Test Plan}
+\label{ch:implementaion_intergrationandtestplan}
+
+\section{Implementation}
+\input{DD_Implementation/implementation.tex}
+
+\section{Integration}
+\input{DD_Implementation/intergration.tex}
+
+\section{Integration Test Plan}
+\input{DD_Implementation/testplan.tex}
+
+%%%%%% EFFORT SPENT%%%%%%%%
+\chapter{Effort}
+\label{ch:effort}
+
+\section{Hours of Work}
+\input{DD_Effort/effort.tex}
+
+
+%\appendix
+%\chapter{Appendix}`'
+%\input{appendix.tex}
+
+%\input{bibilography.tex}
+
+\end{document}
