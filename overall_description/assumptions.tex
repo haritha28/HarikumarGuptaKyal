@@ -1,0 +1,33 @@
+\subsection{Assumptions}
+\begin{itemize}
+\item \textbf{[A1]} Users should be registered in the TrackMe application to avail its services.
+\item \textbf{[A2]} There exist a mobile application of TrackMe for individuals and third party.
+\item \textbf{[A3]} Vitals taken from the wearable devices are reliable. 
+\item \textbf{[A4]} Internet connection will be active in users phone. 
+\item \textbf{[A5]} GPS provides accurate positions and in case the signal is lost, last active location would be considered.
+\item \textbf{[A6]} We assume that a certain number of hospitals are registered to with TrackMe which provide Ambulance services.
+\item \textbf{[A7]} We assume there are no network issues between the time we sent a message and the drivers receive it.
+\item \textbf{[A8]} Organizers can keep a maximum limit of the participants who can join the event.
+\item \textbf{[A9]} An event is organized for a reason.
+\item \textbf{[A10]} All athletes have their own wearable device.
+\item \textbf{[A11]} A user can be an individual or a third party. An individual can either belong to the people availing Data4Help or they can be spectator. An organizer belongs to the third party group. An athlete belongs to the individual group.
+\item \textbf{[A12]} All details entered by the users are genuine.
+\item \textbf{[A13]} We take permission from user to access the location and further details.
+\item \textbf{[A14]} There is an external service that will be in charge of the payment information and to ensure secure payment.
+\item \textbf{[A15]} Payment Details are genuine and transactions are processed positively.
+\end{itemize}
+
+\subsection{Dependencies}
+\begin{itemize}
+\item{\textbf{[D1]}} Wearable device API
+\item{\textbf{[D2]}} Google Maps API
+\item{\textbf{[D3]}} Emergency services API
+\item{\textbf{[D4]}} Payment external gateway
+\end{itemize}
+
+\subsection{Constraints}
+\begin{itemize}
+\item{\textbf{[C1]}} Only a few wearable devices are compatible with application.
+\item{\textbf{[C2]}} The services provided by the application are limited to the citizens of Milan.
+\item{\textbf{[C3]}} This application is connected only with the major hospitals in Milan for Ambulance services.
+\end{itemize}
