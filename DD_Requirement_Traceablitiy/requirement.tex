@@ -1,0 +1,97 @@
+The main objective of determining the design described in this document was to fulfill the requirements and goals mentioned in the Requirement Analysis and Specific Documents.\newline
+The following list outline the mapping between the requirement and goals with the design elements mentioned in the DD.\newline
+
+\begin{itemize}
+
+\item\textbf{[G1]} Providing a list of the wearable devices that an individual can choose from. ([R1]-[R2])
+\begin{itemize}
+\item Data4Help
+\begin{itemize}
+\item Location Module
+\item Health Module
+\item Wearable Device API
+\item Data4Help DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G2]} Expedite the request made by the 3rd party to an individual to access their details. ([R3]-[R4])
+\begin{itemize}
+\item Data4Help
+\begin{itemize}
+\item Request Manager
+\item Data4Help DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G4]} Validating the request made by the 3rd party to provide the details of a group of individuals.([R6]-[R8])
+\begin{itemize}
+\item Data4Help
+\begin{itemize}
+\item Request Manager
+\item Individual Details Provider
+\item Data4Help DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G5]} Quick access of the data to the 3rd party once the request is approved.([R9]-[R10])
+\begin{itemize}
+\item Data4Help
+\begin{itemize}
+\item Request Manager
+\item Individual Details Provider
+\item Data4Help DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G6]} Immediate update of the data once an individual updates their own details.([R11]-[R12])
+\begin{itemize}
+\item Data4Help
+\begin{itemize}
+\item Location Module
+\item Health Module
+\item Wearable Device API
+\item Data4Help DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G8]} Monitoring the health status of the subscribed individual to the Automated SOS service.([R14]-[R16])
+\begin{itemize}
+\item AutomatedSOS
+\begin{itemize}
+\item Health Status Controller
+\item Ambulance Details Provider
+\item Data4Help DB
+\item Emergency Service API
+\item Maps API
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G9]]}  Develops an interface to organize a race for the subscribed 3rd party to the Track4Run service.([R17]-[R19])
+\begin{itemize}
+\item Track4Run
+\begin{itemize}
+\item Event Module
+\item Track4Run DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G10]} Give access to the details of the race once an individual participate in it.([R20]-[R21])
+\begin{itemize}
+\item Track4Run
+\begin{itemize}
+\item Event Module
+\item Track4Run DB
+\end{itemize}
+\end{itemize}
+
+\item\textbf{[G11]} Live visualization of the race .([R22]-[R23])
+\begin{itemize}
+\item Track4Run
+\begin{itemize}
+\item MapView Module
+\item Track4Run DB
+\item Maps API
+\end{itemize}
+\end{itemize}
+
+\end{itemize}
