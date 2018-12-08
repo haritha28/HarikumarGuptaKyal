@@ -1,4 +1,5 @@
-In the following diagram, the mentioned components are more closely examined, with the main focus on the application server. While describing the parts, the notation will be the interface they are providing in order to be more general, because there may be one or more different implementations of the same service within the server. The components shown here communicate with each other and work together to complete certain user requests.
+In the following diagram, the mentioned components are more closely examined, with the main focus on the application server. While describing the parts, the notation will be the interface they are providing in order to be more general, because there may be one or more different implementations of the same service within the server. The components shown here communicate with each other and work together to complete certain user requests.\newline\newline
+\textbf{DATA4HELP SERVICE}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{./DD_Diagrams/ComponentData4Help.png}
@@ -6,28 +7,45 @@ In the following diagram, the mentioned components are more closely examined, wi
         \label{TrackMe_c1}
 	\end{center}
 \end{figure}
-The location and health is taken from the user by the \textit{GetDetails Interface} with the help of the api of the wearable device by \textit{ProvideDetails Interface}, which the individual selects from the list of compatible devices during registration. The details of the individual is then stored in the Data4Help database using \textit{StoreDetails Interface}.\newline
-The thirdparty makes the request to access individual's data which is done by \textit{MakeRequest Interface}.\newline
-The TrackMe Admin then validates the third party request and sends it to user to accept/reject or accepts/rejects himself according to the type of requests by \textit{ValidateRequest Interface}.\newline
-If the request is accepted the user gets the access of the individual's details which uses the Data4Help Database in order to extract individual's details.
+
+\begin{itemize}
+\item\textbf{Location module:}  the location fetched from the Wearable Device API provided by an Individual is stored in the Data4Help DB.
+\item\textbf{Health module:}  the health values fetched from the Wearable Device API provided by an Individual is stored in the Data4Help DB.
+\item\textbf{Request Manager:}  provides an interface to the Third Party to make new request to get the details of a specific Individual or a group of Individual. It also provides an interface to a specific Individual to accept or reject the request.
+\item\textbf{Individual Details Provider:} this uses the  help of the Data4Help DB to provide the details to the Third Party after the TrackMe Admin has validated the request.
+\newline
+\end{itemize}
+\textbf{AUTOMATEDSOS SERVICE}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./DD_Diagrams/ComponentAutomatedSOS.png}
+		\includegraphics[width=\textwidth]{./DD_Diagrams/ComponentAutomatedSOS.jpg}
       	\caption{Component Diagram for AutomatedSOS Service}
         \label{TrackMe_c2}
 	\end{center}
 \end{figure}
-Trackme checks the age of the user in order to know whether they are eligible for this service using \textit{CheckAge Interface}. TrackMe checks the vitals to know about the emergency condition using \textit{CheckVitals Interface} which is fetched from the Data4Help Database.\newline 
-If the emergency situation is acknowledged the admin sends notification using \textit{SendNotification Interface} .\newline
-The Individual receives the Ambulance Details by \textit{GetAmbulanceDetails Interface} and can track the ambulance whose information is fetched from the emergency Service API using \textit{FetchAmbulanceDetails Interface} and uses Maps API to show the map.
+
+\begin{itemize}
+\item\textbf{Health Status Controller:}  uses the help of the Data4Help DB to get the details of an Individual. The TrackMe Admin provides an interface check Individual Details to the controller. The controller then, monitors the individual's vitals and when the vital is below the threshold value, it provides an interface named send notification.  
+\item\textbf{Ambulance Details Provider:} gets the details of all the Ambulance associated to the major hospitals from the Emergency Service API. It uses the maps API to get the nearby ambulances and send notification to that ambulance driver application. It uses the functionality of Push Notification to send the notification. After a driver accept the request, the details of the driver is send to the Individual. 
+\newline
+\end{itemize}
+\textbf{TRACK4RUN SERVICE}
+
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{./DD_Diagrams/ComponentTrack4Run.png}
+		\includegraphics[width=\textwidth]{./DD_Diagrams/ComponentTrack4Run.jpg}
       	\caption{Component Diagram for Track4Run Service}
         \label{TrackMe_c3}
 	\end{center}
 \end{figure}
-The organizer creates an event which the athlete joins using \textit{CreateEvent Interface} and \textit{JoinEvent Interface} respectively. The details of the event is store din the Track4Run Daatabase using \textit{StoreEvent Interface} which is used by Map view to show the details on map. The organizer, athlete and Spectator can watch the race in a map using \textit{WatchEvent Interface} which uses Map API to fetch the map.
+
+\begin{itemize}
+\item\textbf{Event Module:} manages the details of the event and the athletes. It gets all the details of the event from the organizer which is entered after the organizer upgrades to the service. The event details is stored in the Track4Run DB. The athlete joins the event and is then associated with that specific event. 
+\item\textbf{Map View Module:} It uses the Map API to provide an interface watch event to the organizer, athlete and the spectator. It checks the validity of the subscribed users. It uses the Track4Run DB to get the location of the athletes participating in an event, and then maps it to the interface.
+\newline\newline\newline\newline\newline
+\end{itemize}
+\textbf{MAIN COMPONENT}
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{./DD_Diagrams/Component.png}
