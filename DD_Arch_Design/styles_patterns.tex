@@ -1,0 +1,40 @@
+\subsection{Overview}
+
+\qquad The system essentially uses a variety of the multi-layered architecture i,e is the three-tired architecture for our TrackMe application. The application includes a presentation layer, business layer and data layer. The presentation layer, which is the top most layer represents the  display of information related to the services given by the application like checking health status, requesting data, watching a live race etc. The presentation layer directly interacts with the client getting information from the client, with the help of GUI. The business layer also known as the application layer in general, fetches the details form the presentation layer and does detailed processing. For instance it ensures the connection with the corresponding external services required and processing for the data from the services like Google maps, wearable devices etc. The data access layers basically provides an API to the application tier that exposes methods of managing the stored data without exposing or creating dependencies on the data storage mechanisms.
+
+\par We use a three tier application so that we would be able to update the technology stack of one tier without affecting the other one, and provides an easy of managing the different layers.
+
+\subsection{Design Patterns and Architectural Choices}
+\begin{enumerate}
+\item Push Notification
+\par We have used the push notifications, which include the location and details of the individuals in need of emergency care are send to the ambulance drivers via the ambulance application. We basically use the application to make sure of the time constraints that the notification should reach within 5 seconds. The choice is made because of the difficulty in coming up with an asynchronous protocol for message exchanging.
+\item Robustness 
+\par The principal usage of the system is done through mobile applications which are running on mobile terminals. As we can imagine, in that domain the robustness of the system is an important aspect to keep in
+mind. The mobile devices are often subject to loss of connectivity and for that reason the communication between the server and a client could be not available in various time points
+\end{enumerate}
+
+
+\subsection{Other Design Decisions}
+\begin{enumerate}
+\item Storage of Passwords
+\par The passwords are not stored in plain-text but they are hashed and salted with cryptographic hash functions. This provides a last line of defense in case of data theft.
+\item Programming Languages
+\par For the implementation of TrackMe application we choose Java as a programming language. This choice is based on the following considerations:
+	\begin{enumerate}
+	\item Java is a widespread programming language, so we are sure that there will be availability of skilled programmers in this technology.
+    \item The choice of the platform is left to the developer. He/she has wide range of Java platforms to choose from.
+	\end{enumerate}
+\item Ambulance Mobile Application
+\par The ambulance mobile application has been developed basically for the ambulance drivers to recieve the above mentioned push notification within a time interval of 5 seconds.
+\item External Services
+\par The system uses external services, Google Maps to offload all geo-localization, position tracking and map visualization process. The reasons of the choice are the following:
+	\begin{enumerate}
+	\item Manually developing maps for city of Milan is not a viable option due to tremendous amount of coding and data collection time required.
+    \item Google Maps is a well-established, tested and reliable software component used by millions of people used around the world.
+    \item Google Maps can be used both on the server side and the client side. 
+    \item Users feel comfortable using a software which they daily use it.
+    \item Google Maps offers API, enabling programmatic access to features.
+	\end{enumerate}
+    
+\par The system also uses external services like wearable device API, which helps us to fetch the health vitals of the patients and the emergency service API to extract all the details of the nearby hospitals. Wearable device are the best choice to get the health vitals of a patient as it is easy to have it on hand always and can be easily connected to the application. Most of the users will be having a prior experience to use a wearable device.
+\end{enumerate}
